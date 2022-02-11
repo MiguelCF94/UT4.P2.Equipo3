@@ -27,10 +27,10 @@ def comprueba(num):
     listaHeridos=list()
         
     while True: 
-        numEntrada=input("Introduce numero ")
+        numEntrada=str(input("Introduce numero "))
         
-        while re.match("/^[0-9]{4}$/", numEntrada)==None:
-            numEntrada=input("Introduce un numero valido ")
+        while re.match("^[0-9]{4}$", numEntrada)==None:
+            numEntrada=input("Introduce un numero de cuatro cifras ")
             
         for i in range(0,4):
             listaEntrada.append(numEntrada[i])
