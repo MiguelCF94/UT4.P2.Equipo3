@@ -1,4 +1,5 @@
 import random
+import re
 
 def main(): 
     comprueba(generar())
@@ -25,11 +26,11 @@ def comprueba(num):
     listaMuertos=list()
     listaHeridos=list()
         
-    numEntrada=(input("Introduce numero "))
-    
-    while True:
-        while len(numEntrada)!=4:
-            numEntrada=(input("Introduce numero "))
+    while True: 
+        numEntrada=input("Introduce numero ")
+        
+        while re.match("/^[0-9]{4}$/", numEntrada)==None:
+            numEntrada=input("Introduce un numero valido ")
             
         for i in range(0,4):
             listaEntrada.append(numEntrada[i])
