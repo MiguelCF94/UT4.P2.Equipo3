@@ -18,6 +18,7 @@ def generar():
     for i in range(0,len(lista),1):
         numString+=str(lista[i])    
         
+    print(numString)    
     return numString   
 
 def comprueba(num):
@@ -25,7 +26,7 @@ def comprueba(num):
     listaMuertos=list()
     listaHeridos=list()
     
-    numEntrada=str(input("Introduce numero "))
+    numEntrada=str(input("Introduce número "))
         
     while True: 
         
@@ -77,7 +78,7 @@ def comprueba(num):
         
         #Reinicia la entrada del usuario y pide nueva entrada
         listaEntrada.clear()  
-        numEntrada=(input("Introduce numero "))
+        numEntrada=(input("Introduce número "))
     
 
 if __name__ == '__main__':
