@@ -1,6 +1,5 @@
 # -- coding: utf-8 --
 from time import sleep
-from duplicity.asyncscheduler import thread
 
 #Array del dibujo del ahorcado
 MUNECO = ['''
