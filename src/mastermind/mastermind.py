@@ -18,9 +18,7 @@ def generar():
     for i in range(0,len(lista),1):
         numString+=str(lista[i])    
         
-    print(numString)
     return numString   
-
 
 def comprueba(num):
     listaEntrada=list()
